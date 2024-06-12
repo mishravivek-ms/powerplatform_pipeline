@@ -16,9 +16,9 @@ jobs:
       #You can specify the solution name here
       solution_name: DemoDay
       #Update your values here
-      BUILD_ENVIRONMENT_URL: <BUILD_ENVIRONMENT>
-      PRODUCTION_ENVIRONMENT_URL: <PROD_ENVIRONMENT>
-      CLIENT_ID: <APP_ID>
-      TENANT_ID: <TENANT_ID>      
+      BUILD_ENVIRONMENT_URL: 'https://org2e484881.crm.dynamics.com/'
+      PRODUCTION_ENVIRONMENT_URL: 'https://vivektest.crm.dynamics.com/'
+      CLIENT_ID: '24ac33dc-0a08-420c-a75e-256d6f2db5c7'
+      TENANT_ID: '300397f6-dcb7-4019-b6dd-54de99ab13dc'    
     secrets:
       envSecret: ${{ secrets.POWERPLATFORMSPN }}
