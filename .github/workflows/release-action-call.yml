@@ -10,11 +10,11 @@ on:
 permissions:
   contents: write
 jobs:
-  Release-solution-DemoDay:
+  Release-solution-GitHubALM:
     uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
     with:
       #You can specify the solution name here
-      solution_name: DemoDay
+      solution_name: GitHubALM
       #Update your values here
       BUILD_ENVIRONMENT_URL: 'https://org2e484881.crm.dynamics.com/'
       PRODUCTION_ENVIRONMENT_URL: 'https://vivektest.crm.dynamics.com/'
