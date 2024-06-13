@@ -80,16 +80,17 @@
     <RootComponents>
       <RootComponent type="1" schemaName="da_demoalm" behavior="0" />
       <RootComponent type="29" id="{340ea40d-5523-ef11-840a-000d3a3be876}" behavior="0" />
-      <RootComponent type="300" schemaName="da_demoalm_bb54a" behavior="0" />
+      <RootComponent type="62" schemaName="da_DemoALM" behavior="0" />
+      <RootComponent type="80" schemaName="da_DemoALM" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="1" schemaName="environmentvariabledefinition" displayName="Environment Variable Definition" solution="EnvironmentVariables (1.0.2406.4)" />
-        <Dependent type="300" schemaName="da_demoalm_bb54a" displayName="DemoALM" />
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="da_DemoALM" displayName="DemoALM" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="environmentvariablevalue" displayName="Environment Variable Value" solution="EnvironmentVariables (1.0.2406.4)" />
-        <Dependent type="300" schemaName="da_demoalm_bb54a" displayName="DemoALM" />
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.10)" id.uniquename="AppChannel" />
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=da_DemoALM,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="da_DemoALM" id.settingdefinitionid.uniquename="AppChannel" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
