@@ -48,6 +48,9 @@ on:
       envSecret:
         description: 'The secret value for authentication using SPN'
         required: true
+      envProdSecret:
+        description: 'The secret value for authentication using PROD'
+        required: true
 
 jobs:
   convert-to-managed:
@@ -117,7 +120,7 @@ jobs:
       with:
         environment-url: ${{inputs.PRODUCTION_ENVIRONMENT_URL}}
         app-id: ${{inputs.CLIENT_ID}}
-        client-secret: ${{ secrets.POWERAPPPROD }}
+        client-secret: ${{ secrets.envProdSecret }}
         tenant-id: ${{inputs.TENANT_ID}}
         solution-file: ${{ inputs.solution_release_folder}}/${{ inputs.solution_name }}_managed.zip
         force-overwrite: true
