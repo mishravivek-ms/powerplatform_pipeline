@@ -8,3 +8,6 @@
 5. Go to Power App Environment and add the newly created app
 6. Create Action file
 7. Run the workflow.
+
+
+https://learn.microsoft.com/en-us/power-platform/alm/devops-github-actions
